@@ -20,15 +20,10 @@ body {
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
 }
 
 nav {
   font-size: 18px;
-}
-
-article {
-  margin-bottom: 60px;
 }
 
 .post-header {
@@ -40,7 +35,6 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
-  width: 500px;
 }
 
 /* SMALLER ELEMENTS */
@@ -235,7 +229,7 @@ h2::before {
   padding: 20px;
 }
 
-.row {
+/* .row {
   display: flex;
   gap: 75px;
   align-items: flex-start;
@@ -249,4 +243,22 @@ article {
 
 aside {
   flex: 0 0 300px;
+} */
+
+/* CSS Grid */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1/-1;
+}
+
+footer {
+  grid-column: 1/-1;
 }
